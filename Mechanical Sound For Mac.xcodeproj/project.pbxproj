@@ -8,27 +8,37 @@
 
 /* Begin PBXFileReference section */
 		C814378B2F879A3500E6D3D1 /* Mechanical Sound For Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mechanical Sound For Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81437B12F87C00000000011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C81437B22F87C00000000012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C81437B32F87C00000000013 /* KeyboardMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardMonitor.swift; sourceTree = "<group>"; };
+		C81437B42F87C00000000014 /* KeyboardSoundEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardSoundEngine.swift; sourceTree = "<group>"; };
+		C81437B52F87C00000000015 /* Mechanical_Sound_For_MacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mechanical_Sound_For_MacApp.swift; sourceTree = "<group>"; };
+		C81437BB2F87C0000000001B /* KeyPressOverlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPressOverlayController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXBuildFile section */
+		C81437B62F87C00000000016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C81437B12F87C00000000011 /* Assets.xcassets */; };
+		C81437B72F87C00000000017 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81437B22F87C00000000012 /* ContentView.swift */; };
+		C81437B82F87C00000000018 /* KeyboardMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81437B32F87C00000000013 /* KeyboardMonitor.swift */; };
+		C81437B92F87C00000000019 /* KeyboardSoundEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81437B42F87C00000000014 /* KeyboardSoundEngine.swift */; };
+		C81437BA2F87C0000000001A /* Mechanical_Sound_For_MacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81437B52F87C00000000015 /* Mechanical_Sound_For_MacApp.swift */; };
+		C81437BC2F87C0000000001C /* KeyPressOverlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81437BB2F87C0000000001B /* KeyPressOverlayController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXGroup section */
 		C814378D2F879A3500E6D3D1 /* Mechanical Sound For Mac */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
+			isa = PBXGroup;
+			children = (
+				C81437B12F87C00000000011 /* Assets.xcassets */,
+				C81437B22F87C00000000012 /* ContentView.swift */,
+				C81437B32F87C00000000013 /* KeyboardMonitor.swift */,
+				C81437B42F87C00000000014 /* KeyboardSoundEngine.swift */,
+				C81437B52F87C00000000015 /* Mechanical_Sound_For_MacApp.swift */,
+				C81437BB2F87C0000000001B /* KeyPressOverlayController.swift */,
+			);
 			path = "Mechanical Sound For Mac";
 			sourceTree = "<group>";
 		};
-/* End PBXFileSystemSynchronizedRootGroup section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		C81437882F879A3400E6D3D1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
 		C81437822F879A3400E6D3D1 = {
 			isa = PBXGroup;
 			children = (
@@ -47,6 +57,16 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		C81437882F879A3400E6D3D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		C814378A2F879A3400E6D3D1 /* Mechanical Sound For Mac */ = {
 			isa = PBXNativeTarget;
@@ -55,13 +75,11 @@
 				C81437872F879A3400E6D3D1 /* Sources */,
 				C81437882F879A3400E6D3D1 /* Frameworks */,
 				C81437892F879A3400E6D3D1 /* Resources */,
+				C81437A22F87C00000000003 /* Copy Audio Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				C814378D2F879A3500E6D3D1 /* Mechanical Sound For Mac */,
 			);
 			name = "Mechanical Sound For Mac";
 			packageProductDependencies = (
@@ -109,16 +127,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C81437B62F87C00000000016 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C81437A22F87C00000000003 /* Copy Audio Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Audio Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -R \"$SRCROOT/Mechanical Sound For Mac/audio\" \"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app/Contents/Resources/audio\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C81437872F879A3400E6D3D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C81437B72F87C00000000017 /* ContentView.swift in Sources */,
+				C81437B82F87C00000000018 /* KeyboardMonitor.swift in Sources */,
+				C81437B92F87C00000000019 /* KeyboardSoundEngine.swift in Sources */,
+				C81437BA2F87C0000000001A /* Mechanical_Sound_For_MacApp.swift in Sources */,
+				C81437BC2F87C0000000001C /* KeyPressOverlayController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +207,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -178,7 +223,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -225,7 +270,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -235,7 +280,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -251,10 +296,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -281,10 +327,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
