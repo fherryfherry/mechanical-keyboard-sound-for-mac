@@ -207,7 +207,7 @@ final class KeyboardSoundEngine {
         switch phase {
         case .press:
             if keyCode == 51 { return "BACKSPACE" }
-            if keyCode == 36 || keyCode == 76 { return "ENTER" }
+            if keyCode == 36 || keyCode == 76 { return "BACKSPACE" }
             if keyCode == 49 { return "SPACE" }
 
             let genericNames = ["GENERIC_R0", "GENERIC_R1", "GENERIC_R2", "GENERIC_R3", "GENERIC_R4"]
@@ -217,7 +217,7 @@ final class KeyboardSoundEngine {
 
         case .release:
             if keyCode == 51 { return "BACKSPACE" }
-            if keyCode == 36 || keyCode == 76 { return "ENTER" }
+            if keyCode == 36 || keyCode == 76 { return "BACKSPACE" }
             if keyCode == 49 { return "SPACE" }
             return "GENERIC"
         }
